@@ -9,7 +9,7 @@ services:
             - FLOWISE_USERNAME=${FLOWISE_USERNAME:-gochapachi}
             - FLOWISE_PASSWORD=${FLOWISE_PASSWORD:-Itachi@9336}
             - SECRETKEY_PATH=${SECRETKEY_PATH:-gochapachisecret}
-           ports:
+        ports:
             - '${PORT:-3001}:${PORT:-3001}'
         volumes:
             - ~/.flowise:/root/.flowise
